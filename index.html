@@ -9,9 +9,12 @@
     body {
         font-family: "Segoe UI", Arial, sans-serif;
 
-        /* Gradiente corporativo Komatsu */
-        background: linear-gradient(135deg, #0033A0, #3E45C9);
-        
+        /* --- Fondo con imagen --- */
+        background: url("fondo.jpg");
+        background-size: cover;       /* La imagen cubre toda la pantalla */
+        background-position: center;  /* Centrada */
+        background-repeat: no-repeat; /* No repetir */
+
         margin: 0;
         display: flex;
         justify-content: center;
@@ -35,9 +38,14 @@
     .container {
         text-align: center;
         padding: 50px 40px;
-        background: white;
+
+        /* --- Transparencia tipo “glass” --- */
+        background: rgba(255, 255, 255, 0.25);  /* Blanco con transparencia */
+        backdrop-filter: blur(12px);            /* Difuminado del fondo */
+        -webkit-backdrop-filter: blur(12px);    /* Compatibilidad Safari */
+
         border-radius: 20px;
-        box-shadow: 0px 10px 40px rgba(0,0,0,0.15);
+        box-shadow: 0px 10px 40px rgba(0,0,0,0.25);
         width: 360px;
         animation: fadeIn 1.2s ease-out;
     }
@@ -53,7 +61,7 @@
         font-size: 22px;
         margin-bottom: 25px;
         font-weight: 600;
-        color: #0033A0; /* Título corporativo */
+        color: #0033A0;
     }
 
     a.button {
@@ -79,7 +87,6 @@
 <body>
 <div class="container">
 
-    <!-- Logo corporativo -->
     <img src="Komatsu.png" alt="Logo Komatsu" class="logo">
 
     <h1>Formularios para Conductores</h1>
