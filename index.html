@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú de Formularios</title>
+
+<style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+
+        /* Gradiente corporativo Komatsu */
+        background: linear-gradient(135deg, #0033A0, #3E45C9);
+        
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #333;
+    }
+
+    /* Animación fade-in */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .container {
+        text-align: center;
+        padding: 50px 40px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px rgba(0,0,0,0.15);
+        width: 360px;
+        animation: fadeIn 1.2s ease-out;
+    }
+
+    .logo {
+        width: 100%;
+        max-height: 80px;
+        object-fit: contain;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        color: #0033A0; /* Título corporativo */
+    }
+
+    a.button {
+        display: block;
+        background: #3E45C9;
+        color: white;
+        padding: 14px;
+        margin: 12px 0;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 600;
+        transition: 0.25s;
+        letter-spacing: 0.3px;
+    }
+
+    a.button:hover {
+        background: #2F36A0;
+        transform: translateY(-2px);
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- Logo corporativo -->
+    <img src="/mnt/data/Logo Komatsu.png" alt="Logo Komatsu" class="logo">
+
+    <h1>Formularios para Conductores</h1>
+
+    <a class="button" href="https://forms.office.com/r/WPYUcGzn7h">Inspección de vehículos livianos<br>[Diario]</a>
+    <a class="button" href="https://forms.office.com/r/nPr8Y70uqd">Auto evacuación fatiga y somnolencia<br>[Diario]</a>
+    <a class="button" href="URL_FORM_3">Inspección de Caja de Invierno<br>[Semanal]</a>
+    <a class="button" href="https://forms.office.com/r/RgSHf51H08">Inspección de Ruedas<br>[Semanal]</a>
+
+</div>
+</body>
+</html>
